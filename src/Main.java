@@ -2,21 +2,21 @@ public class Main {
     public static void main(String[] args) {
 
         int money = 1001; //сумма пополнения
-        int StartCheck = 100; //начальный счёт
+        int startCheck = 100; //начальный счёт
         int bonus; //количество начисленных бонусов
-        int SummCheck; //итоговая сумма на счету клиента
+        int summCheck; //итоговая сумма на счету клиента
 
         if (money <= 1000) {
             bonus = 0;
-            SummCheck = money + StartCheck;
+            summCheck = money + startCheck;
         } else {
-            bonus = money / StartCheck;
-            SummCheck = money + StartCheck + bonus;
+            bonus = money / startCheck;
+            summCheck = money + startCheck + bonus;
         }
         System.out.println("Количество начисленных бонусов:");
         System.out.println((bonus) + " рублей");
         System.out.println("Итоговая сумма на счету клиента:");
-        System.out.println((SummCheck) + " рублей");
+        System.out.println((summCheck) + " рублей");
 
     }
 }
